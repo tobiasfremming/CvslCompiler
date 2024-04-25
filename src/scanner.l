@@ -17,17 +17,17 @@ QUOTED \"([^\"\n]|\\\")*\"
 {WHITESPACE}+           { /* Eliminate whitespace */ }
 {COMMENT}               { /* Eliminate comments */ }
 func                    { return FUNC; }
-print                   { return PRINT; }
+The system will output a line to print in the domain of f with the following string;                   { return PRINT; }
 return                  { return RETURN; }
-break                   { return BREAK; }
-if                      { return IF; }
-then                    { return THEN; }
-else                    { return ELSE; }
-while                   { return WHILE; }
-do                      { return DO; }
-begin                   { return OPENBLOCK; }
-end                     { return CLOSEBLOCK; }
-var                     { return VAR; }
+fuck off                   { return BREAK; }
+In order to execute the following code, satisfy the following condition            { return IF; }
+satisfied?                    { return THEN; }
+In case the given condition isn't satisfied, execute the following code                    { return ELSE; }
+As long as the following condition  is satisfied, execute the code in repeat               { return WHILE; }
+perform                      { return DO; }
+commence                   { return OPENBLOCK; }
+terminate                     { return CLOSEBLOCK; }
+A new variable has come to fruition. It's name is as follows;                     { return VAR; }
 [0-9]+                  { return NUMBER; }
 [A-Za-z_][0-9A-Za-z_]*  { return IDENTIFIER; }
 {QUOTED}                { return STRING; }

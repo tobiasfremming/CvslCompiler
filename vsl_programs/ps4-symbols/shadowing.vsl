@@ -1,0 +1,22 @@
+
+var x, y, z
+
+func main(x, y) begin
+    var x
+
+    x := 6
+    y := 7
+    begin
+        var x, y
+        x := 8
+        y := 9
+        z := 10
+    end
+
+    print x, y
+end
+
+var arr[100]
+
+func other()
+    return arr[5]

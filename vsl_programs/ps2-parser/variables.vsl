@@ -1,0 +1,17 @@
+
+var global_var, global_array[5]
+
+func my_func(param1, param2, param3) begin
+    var local_var, local_var2
+    local_var := 1
+end
+
+var glob1, glob2
+
+func main() begin
+    var main_local_var
+    begin
+        var main_local_nested_var
+        main_local_nested_var := main_local_var
+    end
+end

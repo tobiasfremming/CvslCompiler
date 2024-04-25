@@ -1,0 +1,12 @@
+var scalar, array[10]
+
+func main() begin
+    array[0] := 1
+    array[1] := array[0] + 1
+    array[array[1]] := 3
+
+    print "The values of the array are: ", array[0], " ", array[1], " ", array[2]
+end
+
+//TESTCASE:
+//The values of the array are: 1 2 3

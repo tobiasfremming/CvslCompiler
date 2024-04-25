@@ -1,0 +1,11 @@
+var a, b
+var array[20]
+
+func main()
+    print "Hello World"
+
+var x, y
+var z
+
+func otherFunction()
+    return 5

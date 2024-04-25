@@ -1,0 +1,10 @@
+// check parsing of do-while loop
+
+func main()
+begin   
+    var i
+    i := 2
+    while i < 9000 do
+        i := i * i
+    print i
+end

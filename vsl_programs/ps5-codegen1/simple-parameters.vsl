@@ -1,0 +1,10 @@
+func printSum(a, b) begin
+     print "sum: ", a+b
+end
+
+//TESTCASE: 100 200
+//sum: 300
+
+// Sum too large to fit in int32
+//TESTCASE: 2000000000 1000000000
+//sum: 3000000000

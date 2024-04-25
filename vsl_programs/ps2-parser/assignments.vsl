@@ -1,0 +1,13 @@
+// checking that comments are ignored
+
+// This program checks the assignment operator
+
+var array[10]
+
+func main()
+begin
+    var a
+    a := 3
+    array[2] := 2
+    print a
+end

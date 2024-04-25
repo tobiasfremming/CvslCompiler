@@ -1,0 +1,16 @@
+
+// Arrays can only be defined globally
+var array[200]
+
+// Sizes must be known at compile time
+var a[10*10+2], b[-1*-1], c
+
+func main(x, y, z) begin
+    // array indexing can both be the target of an assignment
+    array[2] := 20
+    // and an expression
+    print array[10] + array[10+20]
+
+    // the index can be a runtime value
+    array[x] := array[a[x] + y]
+end

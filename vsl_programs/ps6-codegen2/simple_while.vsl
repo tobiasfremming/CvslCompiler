@@ -1,0 +1,14 @@
+func main(count) begin
+    while count > 0 do begin
+        print "count is now ", count
+        count := count - 1
+    end
+end
+
+//TESTCASE: 6
+//count is now 6
+//count is now 5
+//count is now 4
+//count is now 3
+//count is now 2
+//count is now 1

@@ -1,0 +1,84 @@
+
+var notPrime[500]
+
+func main(max) begin
+    print "Now printing every prime between 2 and ", max
+    if max > 499 then begin
+        print "Sorry, this program can only print primes up to 499"
+        return 0
+    end
+
+    // Special cases for 0 and 1
+    notPrime[0] := 1
+    notPrime[1] := 1
+
+    begin
+        var i
+        i := 2
+
+        while i < max/2+1 do begin
+            // Only do sieve if i is a prime
+            if notPrime[i] = 0 then
+                doSieve(i, max)
+            i := i + 1
+        end
+    end
+
+    printPrimes(max)
+end
+
+// Marks every multiple of factor, from 2*factor and above, as not being prime
+func doSieve(factor, max) begin
+    var counter
+
+    counter := factor*2
+    while counter < max + 1 do begin
+        notPrime[counter] := 1
+        counter := counter + factor
+    end
+end
+
+func printPrimes(max) begin
+    var i
+    i := 0
+    while 1=1 do begin
+        if notPrime[i] = 0 then
+            print i, " is prime"
+        if i = max then
+            break
+        else
+           i := i + 1
+    end
+end
+
+//TESTCASE: 600
+//Now printing every prime between 2 and 600
+//Sorry, this program can only print primes up to 499
+
+//TESTCASE: 100
+//Now printing every prime between 2 and 100
+//2 is prime
+//3 is prime
+//5 is prime
+//7 is prime
+//11 is prime
+//13 is prime
+//17 is prime
+//19 is prime
+//23 is prime
+//29 is prime
+//31 is prime
+//37 is prime
+//41 is prime
+//43 is prime
+//47 is prime
+//53 is prime
+//59 is prime
+//61 is prime
+//67 is prime
+//71 is prime
+//73 is prime
+//79 is prime
+//83 is prime
+//89 is prime
+//97 is prime

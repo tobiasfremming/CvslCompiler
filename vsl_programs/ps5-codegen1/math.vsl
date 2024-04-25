@@ -1,0 +1,20 @@
+func main(num) begin
+    print "num = ", num
+    print "num*3 = ", num*3
+    print "num+5 = ", num+5
+    print "num/5 = ", num/5
+    print "4*(-num) = ", 4*(-num)
+    print "num<<2 = ", num<<2
+    print "num>>1 = ", num>>1
+    print "(num-1)*(num+1)*(num+3) = ", (num-1)*(num+1)*(num+3)
+end
+
+//TESTCASE: 12
+//num = 12
+//num*3 = 36
+//num+5 = 17
+//num/5 = 2
+//4*(-num) = -48
+//num<<2 = 48
+//num>>1 = 6
+//(num-1)*(num+1)*(num+3) = 2145

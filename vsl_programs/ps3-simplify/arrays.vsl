@@ -1,0 +1,8 @@
+
+// Sizes must be computed at compile time
+var array[10*10-(2+8/2)]
+
+func main(x, y) begin
+    // indexes can be computed at runtime
+    print array[x * (16*16)]
+end

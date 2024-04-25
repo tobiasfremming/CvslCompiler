@@ -1,0 +1,38 @@
+0: FUNCTION(main)
+1: FUNCTION(printNewlines)
+
+ == STRING LIST == 
+0: "Hello "
+1: " World"
+2: "Another one"
+3: "Yet another"
+4: "\n\n\n"
+
+ == BOUND SYNTAX TREE == 
+LIST
+ FUNCTION
+  IDENTIFIER_DATA(main)
+  LIST
+  BLOCK
+   LIST
+    PRINT_STATEMENT
+     LIST
+      STRING_LIST_REFERENCE(0)
+      NUMBER_DATA(2)
+      STRING_LIST_REFERENCE(1)
+    PRINT_STATEMENT
+     LIST
+      STRING_LIST_REFERENCE(2)
+    BLOCK
+     LIST
+      PRINT_STATEMENT
+       LIST
+        STRING_LIST_REFERENCE(3)
+ FUNCTION
+  IDENTIFIER_DATA(printNewlines)
+  LIST
+  BLOCK
+   LIST
+    PRINT_STATEMENT
+     LIST
+      STRING_LIST_REFERENCE(4)

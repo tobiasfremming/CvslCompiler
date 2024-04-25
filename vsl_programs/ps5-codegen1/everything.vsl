@@ -1,0 +1,26 @@
+
+var X, Y, array[10]
+
+func main(a, b) begin
+    X := a
+    Y := b
+
+    array[0] := mulAndAdd(a/a, 1000)
+    swap()
+    array[1] := mulAndAdd(1, 1000)
+    print array[0], " ", array[1]
+end
+
+func mulAndAdd(x, y) begin
+    return x * X + y * Y
+end
+
+func swap() begin
+    var tmp
+    tmp := X
+    X := Y
+    Y := tmp
+end
+
+//TESTCASE: 4 6
+//6004 4006

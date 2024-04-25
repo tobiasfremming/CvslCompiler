@@ -1,0 +1,16 @@
+
+func main(a) begin
+    if a>5 then
+        print "Input is above 5"
+    else
+        print "Input is not above 5"
+end
+
+//TESTCASE: 7
+//Input is above 5
+
+//TESTCASE: 5
+//Input is not above 5
+
+//TESTCASE: -2
+//Input is not above 5

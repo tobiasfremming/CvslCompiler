@@ -1,0 +1,9 @@
+LIST
+ FUNCTION
+  IDENTIFIER_DATA(main)
+  LIST
+  BLOCK
+   LIST
+    PRINT_STATEMENT
+     LIST
+      STRING_DATA("Hello, World!")

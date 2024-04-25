@@ -1,0 +1,9 @@
+func main() begin
+    print "Hello, World!"
+end
+
+//TESTCASE:
+//Hello, World!
+
+//TESTCASE: 5
+//Wrong number of arguments

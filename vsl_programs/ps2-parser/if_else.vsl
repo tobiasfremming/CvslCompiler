@@ -1,0 +1,25 @@
+func main()
+begin
+    var a, b, c, d
+    c := 1
+    a := 3
+    b := a + c // 4
+    d := a * 100 + 50
+    print "a", a
+    print "b", b
+    print "c", c
+    print "d", d
+    if a = 14 then
+        print 1, "N", d / 5 + a, "RPR", a, "TERS "
+    else
+        print "COMP", c, "L", "ERS "
+    
+    print b, "R", a, " "
+
+    if a < b then
+        if d > 42 then
+            print b, "W", d, "ME"
+        else
+            print "L", b, "M", c
+    // A dangling else, what could go wrong?
+end

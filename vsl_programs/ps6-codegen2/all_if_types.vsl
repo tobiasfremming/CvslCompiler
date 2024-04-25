@@ -1,0 +1,31 @@
+
+func main() begin
+
+    if 1=1 then begin
+        print "You"
+
+        if 1<2 then
+            print "Are"
+        else
+            print "WRONG1"
+
+        if -2>1 then
+            print "WRONG2"
+        else if 1!=2 then
+            print "Getting"
+        else
+            print "WRONG3"
+
+    print "Correct"
+    end else
+        print "WRONG4"
+
+    print "Output"
+end
+
+//TESTCASE:
+//You
+//Are
+//Getting
+//Correct
+//Output

@@ -1,0 +1,11 @@
+func main() begin
+     var A, B
+     var C
+     A := 10
+     B := 20
+     C := A + B
+     print C
+end
+
+//TESTCASE:
+//30

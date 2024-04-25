@@ -1,0 +1,26 @@
+
+func main(a, b, c) begin
+    var x, y
+    var z
+
+    a := b + c
+    print x
+    if y = 0 then
+        c := 6
+
+    begin
+        var X, Y
+
+        X := x
+        Y := a + b
+    end
+end
+
+func otherFunc() begin
+    var x, y
+    begin
+        var z
+        z := x
+    end
+    x := y
+end

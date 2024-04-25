@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+build/
+
+*.ast
+*.svg
+*.symbols
+*.S
+*.out
+!vsl_programs/*/suggested/*

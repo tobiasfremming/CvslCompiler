@@ -1,0 +1,19 @@
+var A, B
+var dummy
+
+func main() begin
+    print "On startup, A and B are ", A, " ", B
+    A := 5
+    dummy := otherFunc()
+    print "Now, B is ", B
+end
+
+func otherFunc() begin
+    print "Here, A is ", A
+    B := 2
+end
+
+//TESTCASE:
+//On startup, A and B are 0 0
+//Here, A is 5
+//Now, B is 2

@@ -1,0 +1,19 @@
+func main(a, b, c, d, e, f, g, h) begin
+    var sumPlus5
+    print "Inside main, the arguments are: ", a, " ", b, " ", c, " ", d, " ", e, " ", f, " ", g, " ", h
+    sumPlus5 := 5 + otherFunc(a, b, c, d, e, f, g, h)
+    print "Sum plus 5: ", sumPlus5
+end
+
+func otherFunc(a, b, c, d, e, f, g, h) begin
+    print "Inside otherFunc, the arguments are: ", a, " ", b, " ", c, " ", d, " ", e, " ", f, " ", g, " ", h
+    return a + b + c + d + e + f + g + h
+end
+
+//TESTCASE: 1 3 5 7 9
+//Wrong number of arguments
+
+//TESTCASE: 1 3 5 7 9 11 13 15
+//Inside main, the arguments are: 1 3 5 7 9 11 13 15
+//Inside otherFunc, the arguments are: 1 3 5 7 9 11 13 15
+//Sum plus 5: 69

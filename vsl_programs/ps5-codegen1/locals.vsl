@@ -1,0 +1,18 @@
+func main() begin
+    var a, b
+    var c
+    print "Now, a b c are ", a, " ", b, " ", c
+    a := 6
+    begin
+        var c
+        b := 20
+        c := 100
+        print "In here, a b c are ", a, " ", b, " ", c
+    end
+    print "Out here, a b c are ", a, " ", b, " ", c
+end
+
+//TESTCASE:
+//Now, a b c are 0 0 0
+//In here, a b c are 6 20 100
+//Out here, a b c are 6 20 0

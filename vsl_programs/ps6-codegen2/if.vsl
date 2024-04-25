@@ -1,0 +1,54 @@
+
+func main(a) begin
+    
+    
+    if a<10 then
+        print "a is less than 10"
+    if a>-5 then
+        print "a is more than -5"
+    else
+        print "a is less than or equal to -5"
+
+    if a = 5 then
+        print "a is equal to 5"
+
+    if a != 0 then begin
+        print "a is not equal to 0"
+        if a = 6 then
+            print "a is however 6"
+        else if a = 7 then
+            print "a is however 7"
+        else if a = 10 then
+            print "a is however 10"
+        else
+            print "a is neither 0, 6, 7 or 10, but ", a
+    end
+end
+
+
+
+
+
+
+
+
+//TESTCASE: 4
+//a is less than 10
+//a is more than -5
+//a is not equal to 0
+//a is neither 0, 6, 7 or 10, but 4
+
+//TESTCASE: 0
+//a is less than 10
+//a is more than -5
+
+//TESTCASE: 10
+//a is more than -5
+//a is not equal to 0
+//a is however 10
+
+//TESTCASE: -20
+//a is less than 10
+//a is less than or equal to -5
+//a is not equal to 0
+//a is neither 0, 6, 7 or 10, but -20

@@ -1,0 +1,8 @@
+func add(a, b) begin
+    return a + b
+end
+
+func main() 
+begin
+    print add(40, 2)
+end

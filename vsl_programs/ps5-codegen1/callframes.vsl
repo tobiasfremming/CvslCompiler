@@ -1,0 +1,32 @@
+
+func main(first, last) begin
+    var result
+    print "Printing the sum of all integers from ", first, " up to, but not including ", last
+    result := sumRange(first, last)
+    print result
+end
+
+// Calculates the sum of the numbers
+// first, first+1, first+2 ... last-2, last-1
+func sumRange(first, last) begin
+    var sumEnd, sumPreFirst
+    sumEnd := sumUntil(last)
+    sumPreFirst := sumUntil(first)
+    return sumEnd - sumPreFirst
+end
+
+// Calculates the sum of 1, 2, 3, ..., n-2, n-1
+func sumUntil(n) begin
+    var product
+    product := n * (n-1)
+    product := product / 2
+    return product
+end
+
+//TESTCASE: 2 10
+//Printing the sum of all integers from 2 up to, but not including 10
+//44
+
+//TESTCASE: 6 6
+//Printing the sum of all integers from 6 up to, but not including 6
+//0

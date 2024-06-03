@@ -1,6 +1,7 @@
 ## Very Simple Langauge Compiler
 
-This folder contains the source code for `vslc`.
+Compiles VSL code (Very Simple Language) into runnable x86_64 assembly code.
+- LL parser
 
 #### Dependencies
 To build, you will need

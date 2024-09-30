@@ -1,5 +1,10 @@
 ## Very Simple Langauge Compiler
 
+
+ <img src="https://github.com/tobiasfremming/CvslCompiler/blob/main/cvlsCompiler.png" alt="logo" width="200" height="200" />
+ 
+
+
 Compiles VSL code (Very Simple Language) into runnable x86_64 assembly code.
 - LL parser
 
